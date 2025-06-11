@@ -24,13 +24,13 @@ jobs:
       run: chmod +x ./gradlew
       
     - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
+      uses: gradle/actions/setup-gradle@v4
 
     - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+      uses: android-actions/setup-android@v3
 
     - name: Build with Gradle
-        run: |
+      run: |
           {
             echo 'org.gradle.parallel=true'
             echo 'org.gradle.vfs.watch=true'
